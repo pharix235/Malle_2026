@@ -37,5 +37,12 @@
     </div>
 </section>
 
+<script>
+document.querySelectorAll(".route-card").forEach(card => {
+    card.addEventListener("click", () => {
+        card.classList.toggle("active");
+    });
+});
+</script>
 </body>
 </html>

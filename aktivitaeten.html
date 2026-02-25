@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aktivitäten</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Start</a>
+    <a href="routen.html">Routen</a>
+    <a href="dokumente.html">Reiseunterlagen</a>
+    <a href="aktivitaeten.html">Aktivitäten</a>
+    <a href="packliste.html">Packliste</a>
+</nav>
+
+
+<section class="section">
+
+    <h1>Aktivitäten rund um Alcúdia</h1>
+
+    <div class="routes-grid">
+
+        <div class="route-card">
+            <img src="markt.jfif" class="route-image">
+            <div class="route-content">
+                <h2>Pollença Altstadt</h2>
+                <p>
+                    Wunderschöne Altstadt mit engen Gassen, kleinen Cafés und entspannter Atmosphäre.
+                    Perfekt für einen ruhigen Nachmittag oder Cappuccino-Stop.
+                </p>
+            </div>
+        </div>
+
+        <div class="route-card">
+            <img src="puig.jfif" class="route-image">
+            <div class="route-content">
+                <h2>Puig de Maria Aussichtspunkt</h2>
+                <p>
+                    Kleiner Anstieg oberhalb von Pollença mit toller Aussicht über den Norden Mallorcas.
+                    Ideal als kurzer Ausflug oder Spaziergang.
+                </p>
+            </div>
+        </div>
+
+        <div class="route-card">
+            <img src="altstadt.jfif" class="route-image">
+            <div class="route-content">
+                <h2>Altstadt von Alcúdia</h2>
+                <p>
+                    Historische Stadtmauer, schöne kleine Gassen und viele Restaurants.
+                    Perfekt für einen entspannten Abend nach dem Training.
+                </p>
+            </div>
+                <!-- versteckter Zusatz -->
+    <div class="route-extra">
+        <p>
+            Tipp: Perfekt für einen Cappuccino nach der Rennradfahrt.
+            Besonders schön am späten Nachmittag.
+        </p>
+    </div>
+        </div>
+
+        <div class="route-card">
+            <img src="muro.jfif" class="route-image">
+            <div class="route-content">
+                <h2>Playa de Muro</h2>
+                <p>
+                    Langer Sandstrand ideal zum Spazieren, Sonnenuntergang schauen oder als Recovery-Tag
+                    nach einer anstrengenden Rennrad-Etappe.
+                </p>
+            </div>
+        </div>
+
+        <div class="route-card">
+            <img src="markt1.jpg" class="route-image">
+            <div class="route-content">
+                <h2>Wochenmarkt in Alcúdia</h2>
+                <p>
+                    Typischer mallorquinischer Markt mit Obst, Snacks und kleinen Souvenirs.
+                    Perfekt für einen entspannten Vormittag ohne Training.
+                </p>
+            </div>
+        </div>
+
+        <div class="route-card">
+            <img src="hafen.jfif" class="route-image">
+            <div class="route-content">
+                <h2>Hafen von Port d'Alcúdia</h2>
+                <p>
+                    Schöner Ort für einen Abendspaziergang nach dem Training
+                    mit Sonnenuntergang und Restaurants direkt am Wasser.
+                </p>
+            </div>
+        </div>
+
+        <div class="route-card">
+            <img src="sonnenuntergang.jpg" class="route-image">
+            <div class="route-content">
+                <h2>Sonnenuntergang am Meer</h2>
+                <p>
+                    Perfekter Recovery-Moment nach langen Rennrad-Touren.
+                    Ruhiger Abschluss eines Trainingstages.
+                </p>
+            </div>
+        </div>
+
+        <div class="route-card">
+            <img src="cafe.jfif" class="route-image">
+            <div class="route-content">
+                <h2>Café-Stop in Pollença</h2>
+                <p>
+                    Ideal nach einer Fahrt: Cappuccino, kleine Snacks
+                    und entspannte Atmosphäre in der Altstadt.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<script>
+document.querySelectorAll(".route-card").forEach(card => {
+    card.addEventListener("click", () => {
+        card.classList.toggle("active");
+    });
+});
+</script>
+</body>
+</html>
