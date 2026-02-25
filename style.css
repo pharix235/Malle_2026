@@ -1,0 +1,321 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f8f8;
+    color: #1a1a1a;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+}
+
+.hero {
+    background: url("Cap_formentor.jpg") center/cover no-repeat;
+    height: 70vh;
+    position: relative;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.35);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.overlay h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.overlay p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 25px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+nav a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 500;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background-color: #2c6e91;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.section {
+    padding: 80px 15%;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .overlay h1 {
+        font-size: 2rem;
+    }
+
+    .overlay p {
+        font-size: 1rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .section {
+        padding: 50px 10%;
+    }
+
+    .card {
+        padding: 25px;
+    }
+
+}
+
+.checklist {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.category {
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.category h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.category label {
+    display: block;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.category input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.1);
+}
+
+
+.category-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.category-header h2 {
+    margin: 0;
+    padding-right: 20px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.category-checkbox {
+    width: 18px;
+    height: 18px;
+}
+
+
+
+.route-image {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+
+.route-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 14px 25px;
+    background: #2c6e91;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.route-button:hover {
+    background: #1f5a77;
+}
+
+
+
+
+
+.difficulty-text {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+
+.route-meta {
+    margin-top: 25px;
+}
+
+.meta-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-top: 1px solid #eee;
+}
+
+.meta-label {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.meta-value {
+    font-weight: 600;
+}
+
+
+
+
+.route-content {
+    padding: 25px;
+}
+
+.route-card h2 {
+    margin: 0 0 18px 0;
+    font-size: 1.3rem;
+}
+
+.route-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* ===== ROUTEN GRID LAYOUT ===== */
+
+/* ===== ROUTEN GRID LAYOUT ===== */
+
+.routes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+
+.route-card {
+    background: white;
+    border-radius: 22px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    overflow: hidden;
+    width: 100%;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.route-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+}
+
+.route-image {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.route-content {
+    padding: 25px;
+}
+
+.route-card h2 {
+    margin: 0 0 18px 0;
+    font-size: 1.3rem;
+}
+
+/* Kompakte Difficulty Badges */
+.route-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 2px 6px;
+    border: 1px solid;
+    border-radius: 3px;
+    line-height: 1;
+}
+
+.route-badge.easy {
+    color: #2c6e91;
+    border-color: #2c6e91;
+}
+
+.route-badge.medium {
+    color: #c00000;
+    border-color: #c00000;
+}
+
+.route-badge.hard {
+    color: #000000;
+    border-color: #000000;
+}
+
+.route-meta {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.route-meta span {
+    background: #f5f5f5;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
